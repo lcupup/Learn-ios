@@ -1,0 +1,22 @@
+PODS:
+  - Masonry (1.1.0)
+  - NSLogger (1.9.7):
+    - NSLogger/ObjC (= 1.9.7)
+  - NSLogger/ObjC (1.9.7)
+
+DEPENDENCIES:
+  - Masonry
+  - NSLogger
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - NSLogger
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  NSLogger: cf3013a4fba189f631f07e6c3d5b8ce2b209654b
+
+PODFILE CHECKSUM: c2b479cead01bf4ea9ab51dd0666b5fa8819e65b
+
+COCOAPODS: 1.8.4
