@@ -13,7 +13,7 @@
 typedef void(^cellClickBlock)(NSInteger index);
 typedef void(^cellLabelClickBlock)(NSInteger index);
 
-@interface GKCycleScrollViewCell : UIView
+@interface GKCycleScrollViewCell : UIView <UIGestureRecognizerDelegate>
 
 /**
  图片视图
@@ -21,6 +21,7 @@ typedef void(^cellLabelClickBlock)(NSInteger index);
 @property (nonatomic, strong) UIImageView   *imageView;
 
 @property (nonatomic,strong) UILabel * label;
+@property (nonatomic,strong) UIButton *button;
 
 /**
  遮罩视图，用于处理透明度渐变

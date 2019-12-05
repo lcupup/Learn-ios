@@ -63,40 +63,40 @@
 }
 
 // 重新此方法是为了解决当cell超出UIScrollView时不能点击的问题
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    if ([self pointInside:point withEvent:event]) {
-        // 判断点击的点是否在cell上
-        for (UIView *cell in self.scrollView.subviews) {
-            // 将cell的frame转换到当前视图上
-            CGRect convertFrame = CGRectZero;
-            convertFrame.size = cell.frame.size;
-            
-            if (self.direction == GKCycleScrollViewScrollDirectionHorizontal) {
-                convertFrame.origin.x = cell.frame.origin.x + self.scrollView.frame.origin.x - self.scrollView.contentOffset.x;
-                convertFrame.origin.y = 0;
-            }else {
-                convertFrame.origin.x = 0;
-                convertFrame.origin.y = cell.frame.origin.y + self.scrollView.frame.origin.y - self.scrollView.contentOffset.y;
-            }
-
-            // 判断点击的点是否在cell上
-            if (CGRectContainsPoint(convertFrame, point)) {
-                return cell;
-            }
-        }
-        // 判断点击的点是否在UIScrollView上
-        CGPoint newPoint = CGPointZero;
-        newPoint.x = point.x - self.scrollView.frame.origin.x + self.scrollView.contentOffset.x;
-        newPoint.y = point.y - self.scrollView.frame.origin.y + self.scrollView.contentOffset.y;
-        if ([self.scrollView pointInside:newPoint withEvent:event]) {
-            return [self.scrollView hitTest:newPoint withEvent:event];
-        }
-        
-        // 系统处理
-        return [super hitTest:point withEvent:event];
-    }
-    return nil;
-}
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+//    if ([self pointInside:point withEvent:event]) {
+//        // 判断点击的点是否在cell上
+//        for (UIView *cell in self.scrollView.subviews) {
+//            // 将cell的frame转换到当前视图上
+//            CGRect convertFrame = CGRectZero;
+//            convertFrame.size = cell.frame.size;
+//
+//            if (self.direction == GKCycleScrollViewScrollDirectionHorizontal) {
+//                convertFrame.origin.x = cell.frame.origin.x + self.scrollView.frame.origin.x - self.scrollView.contentOffset.x;
+//                convertFrame.origin.y = 0;
+//            }else {
+//                convertFrame.origin.x = 0;
+//                convertFrame.origin.y = cell.frame.origin.y + self.scrollView.frame.origin.y - self.scrollView.contentOffset.y;
+//            }
+//
+//            // 判断点击的点是否在cell上
+//            if (CGRectContainsPoint(convertFrame, point)) {
+//                return cell;
+//            }
+//        }
+//        // 判断点击的点是否在UIScrollView上
+//        CGPoint newPoint = CGPointZero;
+//        newPoint.x = point.x - self.scrollView.frame.origin.x + self.scrollView.contentOffset.x;
+//        newPoint.y = point.y - self.scrollView.frame.origin.y + self.scrollView.contentOffset.y;
+//        if ([self.scrollView pointInside:newPoint withEvent:event]) {
+//            return [self.scrollView hitTest:newPoint withEvent:event];
+//        }
+//
+//        // 系统处理
+//        return [super hitTest:point withEvent:event];
+//    }
+//    return nil;
+//}
 
 #pragma mark - Public Methods
 - (void)reloadData {
@@ -518,7 +518,6 @@
     GKCycleScrollViewCell *cell = self.visibleCells[index];
     if ((NSObject *)cell == [NSNull null]) {
         cell = [self.dataSource cycleScrollView:self cellForViewAtIndex:index % self.realCount];
-        NSAssert(cell!=nil, @"datasource must not return nil");
         [self.visibleCells replaceObjectAtIndex:index withObject:cell];
         
         cell.tag = index % self.realCount;
@@ -750,7 +749,7 @@
         _scrollView.clipsToBounds = NO;
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
-        _scrollView.panGestureRecognizer.delaysTouchesBegan=YES;
+//        _scrollView.panGestureRecognizer.delaysTouchesBegan=YES;
     }
     return _scrollView;
 }
