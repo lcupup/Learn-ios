@@ -37,6 +37,9 @@ typedef NS_ENUM(NSUInteger, GKCycleScrollViewScrollDirection) {
 // cell点击时调用
 - (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didSelectCellAtIndex:(NSInteger)index;
 
+// cellLabel点击时调用
+- (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didSelectCellLabelAtIndex:(NSInteger)index;
+
 #pragma mark - UIScrollViewDelegate 相关
 - (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView willBeginDragging:(UIScrollView *)scrollView;
 - (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didScroll:(UIScrollView *)scrollView;

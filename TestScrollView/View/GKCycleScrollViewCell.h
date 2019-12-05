@@ -11,6 +11,7 @@
 @class GKCycleScrollViewCell;
 
 typedef void(^cellClickBlock)(NSInteger index);
+typedef void(^cellLabelClickBlock)(NSInteger index);
 
 @interface GKCycleScrollViewCell : UIView
 
@@ -30,6 +31,7 @@ typedef void(^cellClickBlock)(NSInteger index);
  cell点击回调
  */
 @property (nonatomic, copy) cellClickBlock  didCellClick;
+@property (nonatomic, copy) cellLabelClickBlock  didCellLabelClick;
 
 - (void)setupCellFrame:(CGRect)frame;
 

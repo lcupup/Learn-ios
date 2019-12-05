@@ -20,9 +20,19 @@
         
         UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
         [self addGestureRecognizer:tapGesture];
+        
+        UITapGestureRecognizer * tapGestureLabel = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGestureLabel:)];
+        [self addGestureRecognizer:tapGestureLabel];
        
     }
     return self;
+}
+
+- (void)handleTapGestureLabel:(UITapGestureRecognizer *)tap {
+    
+    if (_didCellLabelClick) {
+        _didCellLabelClick(self.label.tag);
+    }
 }
 
 - (void)handleTapGesture:(UITapGestureRecognizer *)tap {

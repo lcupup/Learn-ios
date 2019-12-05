@@ -77,6 +77,10 @@
 -(void) cycleScrollView:(GKCycleScrollView *)cycleScrollView didScrollCellToIndex:(NSInteger)index{
 }
 
+- (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didSelectCellLabelAtIndex:(NSInteger)index {
+    NSLog(@"%d,",index);
+}
+
 
 -(GKCycleScrollViewCell *)cycleScrollView:(GKCycleScrollView *)cycleScrollView cellForViewAtIndex:(NSInteger)index{
     GKCycleScrollViewCell *cell= [cycleScrollView dequeueReusableCell];
