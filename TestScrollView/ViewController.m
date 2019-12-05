@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "GKCycleScrollView.h"
 #import <Masonry/Masonry.h>
-#import <NSLogger/NSLogger.h>
 
 @interface ViewController ()<GKCycleScrollViewDelegate,GKCycleScrollViewDataSource>
 @property(nonatomic,strong)NSArray * dataArr;
@@ -78,7 +77,7 @@
 }
 
 - (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didSelectCellLabelAtIndex:(NSInteger)index {
-    NSLog(@"%d,",index);
+    NSLog(@"%ld,",(long)index);
 }
 
 

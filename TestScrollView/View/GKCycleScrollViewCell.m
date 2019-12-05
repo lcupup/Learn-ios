@@ -7,7 +7,6 @@
 //
 
 #import "GKCycleScrollViewCell.h"
-#import <NSLogger/NSLogger.h>
 @implementation GKCycleScrollViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -36,7 +35,6 @@
 }
 
 - (void)handleTapGesture:(UITapGestureRecognizer *)tap {
-    LoggerApp(1,@"点击le");
     !self.didCellClick ? : self.didCellClick(self.tag);
 }
 
