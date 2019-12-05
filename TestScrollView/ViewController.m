@@ -33,7 +33,7 @@
 
 -(void) initData{
     self.dataArr=@[@{@"title": @"我是标题我是标题",@"img_url":@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3724300455,3419815340&fm=26&gp=0.jpg"},@{@"title":@"我是标题我是标题",@"img_url":@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3657258270,1485602730&fm=26&gp=0.jpg"}
-    ];
+                   ];
     
 }
 
@@ -70,14 +70,15 @@
     return self.dataArr.count;
 }
 - (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didSelectCellAtIndex:(NSInteger)index{
-    
-
+    NSLog(@"点击cell背景%ld,",(long)index);
 }
--(void) cycleScrollView:(GKCycleScrollView *)cycleScrollView didScrollCellToIndex:(NSInteger)index{
+
+-(void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didScrollCellToIndex:(NSInteger)index{
 }
 
 - (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didSelectCellLabelAtIndex:(NSInteger)index {
-    NSLog(@"%ld,",(long)index);
+    NSInteger LabelTagIndex = index - 0x11111111;
+    NSLog(@"点击label%ld,",(long)LabelTagIndex);
 }
 
 
@@ -88,7 +89,7 @@
         cell.layer.cornerRadius=10.0f;
         cell.layer.masksToBounds=YES;
         cell.imageView.contentMode=UIViewContentModeScaleAspectFit;
-    
+        
         
     }
     

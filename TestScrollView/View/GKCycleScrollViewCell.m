@@ -28,9 +28,9 @@
 }
 
 - (void)handleTapGestureLabel:(UITapGestureRecognizer *)tap {
-    
+    NSInteger labelTag = 0x11111111 + self.tag;
     if (_didCellLabelClick) {
-        _didCellLabelClick(self.label.tag);
+        _didCellLabelClick(labelTag);
     }
 }
 
