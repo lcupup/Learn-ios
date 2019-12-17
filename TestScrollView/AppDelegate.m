@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "NetViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,9 @@
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController=[[ViewController alloc]init];
+    
+    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:[[NetViewController alloc]init]];
+    self.window.rootViewController=nav;
     
     
     

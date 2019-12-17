@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1683DD7D134CEA7B78428743 /* libPods-TestScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AC23B925C08495CF02A361 /* libPods-TestScrollView.a */; };
+		E526736C23A8B094007D523E /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E526736B23A8B094007D523E /* NetViewController.m */; };
+		E526736F23A8B451007D523E /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E526736E23A8B451007D523E /* NetWorkManager.m */; };
 		E57A4C802397515B0085300F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C7F2397515B0085300F /* AppDelegate.m */; };
 		E57A4C862397515B0085300F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C852397515B0085300F /* ViewController.m */; };
 		E57A4C892397515B0085300F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A4C872397515B0085300F /* Main.storyboard */; };
@@ -23,6 +25,10 @@
 		4FE0A1D91D54BCF1CDE63C11 /* Pods-TestScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScrollView.release.xcconfig"; path = "Target Support Files/Pods-TestScrollView/Pods-TestScrollView.release.xcconfig"; sourceTree = "<group>"; };
 		58AC23B925C08495CF02A361 /* libPods-TestScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF170EABEB6448AB1521F21D /* Pods-TestScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScrollView.debug.xcconfig"; path = "Target Support Files/Pods-TestScrollView/Pods-TestScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		E526736A23A8B094007D523E /* NetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetViewController.h; path = TestScrollView/NetViewController.h; sourceTree = SOURCE_ROOT; };
+		E526736B23A8B094007D523E /* NetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NetViewController.m; path = TestScrollView/NetViewController.m; sourceTree = SOURCE_ROOT; };
+		E526736D23A8B451007D523E /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		E526736E23A8B451007D523E /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		E57A4C7B2397515B0085300F /* TestScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57A4C7E2397515B0085300F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E57A4C7F2397515B0085300F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +76,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E526736923A8B05F007D523E /* NetModel */ = {
+			isa = PBXGroup;
+			children = (
+				E526736A23A8B094007D523E /* NetViewController.h */,
+				E526736B23A8B094007D523E /* NetViewController.m */,
+				E526736D23A8B451007D523E /* NetWorkManager.h */,
+				E526736E23A8B451007D523E /* NetWorkManager.m */,
+			);
+			path = NetModel;
+			sourceTree = "<group>";
+		};
 		E57A4C722397515A0085300F = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +108,7 @@
 		E57A4C7D2397515B0085300F /* TestScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				E526736923A8B05F007D523E /* NetModel */,
 				E57A4C9723975D8D0085300F /* View */,
 				E57A4C7E2397515B0085300F /* AppDelegate.h */,
 				E57A4C7F2397515B0085300F /* AppDelegate.m */,
@@ -214,6 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E526736F23A8B451007D523E /* NetWorkManager.m in Sources */,
+				E526736C23A8B094007D523E /* NetViewController.m in Sources */,
 				E57A4C9F23975E040085300F /* GKCycleScrollViewCell.m in Sources */,
 				E57A4C862397515B0085300F /* ViewController.m in Sources */,
 				E57A4CA023975E040085300F /* GKPageControl.m in Sources */,

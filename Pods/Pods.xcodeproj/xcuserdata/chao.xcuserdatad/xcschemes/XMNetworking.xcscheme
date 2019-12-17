@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "10F1357926C75B4E97533881F4C300B7"
-               BuildableName = "libNSLogger.a"
-               BlueprintName = "NSLogger"
+               BlueprintIdentifier = "93EB9B425BCBD4BEE22BE61F33F6372C"
+               BuildableName = "libXMNetworking.a"
+               BlueprintName = "XMNetworking"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
