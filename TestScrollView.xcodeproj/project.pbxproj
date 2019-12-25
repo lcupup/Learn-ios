@@ -10,6 +10,8 @@
 		1683DD7D134CEA7B78428743 /* libPods-TestScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AC23B925C08495CF02A361 /* libPods-TestScrollView.a */; };
 		E526736C23A8B094007D523E /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E526736B23A8B094007D523E /* NetViewController.m */; };
 		E526736F23A8B451007D523E /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E526736E23A8B451007D523E /* NetWorkManager.m */; };
+		E54F4AF923B2FB32003FA5C5 /* TabviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54F4AF823B2FB32003FA5C5 /* TabviewViewController.m */; };
+		E54F4AFC23B312FE003FA5C5 /* LCLearnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E54F4AFB23B312FE003FA5C5 /* LCLearnTableViewCell.m */; };
 		E57A4C802397515B0085300F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C7F2397515B0085300F /* AppDelegate.m */; };
 		E57A4C862397515B0085300F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C852397515B0085300F /* ViewController.m */; };
 		E57A4C892397515B0085300F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A4C872397515B0085300F /* Main.storyboard */; };
@@ -29,6 +31,10 @@
 		E526736B23A8B094007D523E /* NetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NetViewController.m; path = TestScrollView/NetViewController.m; sourceTree = SOURCE_ROOT; };
 		E526736D23A8B451007D523E /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		E526736E23A8B451007D523E /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		E54F4AF723B2FB32003FA5C5 /* TabviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabviewViewController.h; sourceTree = "<group>"; };
+		E54F4AF823B2FB32003FA5C5 /* TabviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabviewViewController.m; sourceTree = "<group>"; };
+		E54F4AFA23B312FE003FA5C5 /* LCLearnTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLearnTableViewCell.h; sourceTree = "<group>"; };
+		E54F4AFB23B312FE003FA5C5 /* LCLearnTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLearnTableViewCell.m; sourceTree = "<group>"; };
 		E57A4C7B2397515B0085300F /* TestScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57A4C7E2397515B0085300F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E57A4C7F2397515B0085300F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +93,17 @@
 			path = NetModel;
 			sourceTree = "<group>";
 		};
+		E54F4AF623B2FAF9003FA5C5 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				E54F4AF723B2FB32003FA5C5 /* TabviewViewController.h */,
+				E54F4AF823B2FB32003FA5C5 /* TabviewViewController.m */,
+				E54F4AFA23B312FE003FA5C5 /* LCLearnTableViewCell.h */,
+				E54F4AFB23B312FE003FA5C5 /* LCLearnTableViewCell.m */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		E57A4C722397515A0085300F = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +125,7 @@
 		E57A4C7D2397515B0085300F /* TestScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				E54F4AF623B2FAF9003FA5C5 /* TabView */,
 				E526736923A8B05F007D523E /* NetModel */,
 				E57A4C9723975D8D0085300F /* View */,
 				E57A4C7E2397515B0085300F /* AppDelegate.h */,
@@ -239,7 +257,9 @@
 				E57A4CA023975E040085300F /* GKPageControl.m in Sources */,
 				E57A4C802397515B0085300F /* AppDelegate.m in Sources */,
 				E57A4C9E23975E040085300F /* GKCycleScrollView.m in Sources */,
+				E54F4AFC23B312FE003FA5C5 /* LCLearnTableViewCell.m in Sources */,
 				E57A4C912397515C0085300F /* main.m in Sources */,
+				E54F4AF923B2FB32003FA5C5 /* TabviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

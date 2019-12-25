@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "NetViewController.h"
+#import "TabviewViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
     
-    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:[[NetViewController alloc]init]];
+    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:[[TabviewViewController alloc]init]];
     self.window.rootViewController=nav;
     
     
