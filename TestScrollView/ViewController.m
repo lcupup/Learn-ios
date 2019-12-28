@@ -42,20 +42,17 @@
     self.view.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:self.uiscrollView];
     [self.uiscrollView addSubview:self.contentView];
-    
+
     [_uiscrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.equalTo(self.view);
     }];
     
     [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.uiscrollView);
+        make.height.equalTo(self.view.mas_height);
         make.width.equalTo(self.view.mas_width);
     }];
     
-    
-    
-    
-    
+
     [self.contentView addSubview:self.cycleScrollView];
     [self.cycleScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.contentView);
@@ -82,6 +79,7 @@
     
     if (_contentView==nil) {
         _contentView=[[UIView alloc] init];
+        _contentView.backgroundColor=[UIColor orangeColor];
     }
     return _contentView;
     
@@ -97,8 +95,7 @@
         _cycleScrollView.isInfiniteLoop=NO;
         _cycleScrollView.isChangeAlpha=NO;
         _cycleScrollView.leftRightMargin=30.0f;
-        
-        
+
     }
     return _cycleScrollView;
 }
@@ -119,6 +116,10 @@
 }
 
 
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSLog(@"dajdjhajdkabh");
+}
 -(GKCycleScrollViewCell *)cycleScrollView:(GKCycleScrollView *)cycleScrollView cellForViewAtIndex:(NSInteger)index{
     GKCycleScrollViewCell *cell= [cycleScrollView dequeueReusableCell];
     if (!cell) {
@@ -136,6 +137,8 @@
 -(CGSize)sizeForCellInCycleScrollView:(GKCycleScrollView *)cycleScrollView{
     return CGSizeMake(ceil(300.0f), 200.0f);
 }
+
+
 
 
 @end
