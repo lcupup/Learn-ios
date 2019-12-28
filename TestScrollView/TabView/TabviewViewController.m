@@ -40,7 +40,7 @@
 
 -(UITableView *) tableView{
     if (_tableView==nil) {
-        _tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,self.view.bounds.size.height)];
+        _tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,200)];
         _tableView.delegate=self;
         _tableView.dataSource=self;
         _tableView.rowHeight=UITableViewAutomaticDimension;

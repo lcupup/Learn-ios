@@ -16,6 +16,8 @@
 @property(nonatomic,strong)GKCycleScrollView * cycleScrollView;
 @property(nonatomic,assign)BOOL isClickCategory;
 @property(nonatomic,assign)BOOL isSelectCategory;
+@property(nonatomic,strong) UIScrollView * uiscrollView;
+@property(nonatomic,strong) UIView * contentView;
 
 
 
@@ -32,23 +34,58 @@
 
 
 -(void) initData{
-    self.dataArr=@[@{@"title": @"我是标题我是标题",@"img_url":@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3724300455,3419815340&fm=26&gp=0.jpg"},@{@"title":@"我是标题我是标题",@"img_url":@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3657258270,1485602730&fm=26&gp=0.jpg"}
-                   ];
+    self.dataArr=@[@{@"title": @"我是标题我是标题",@"img_url":@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3724300455,3419815340&fm=26&gp=0.jpg"},@{@"title":@"我是标题我是标题",@"img_url":@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3657258270,1485602730&fm=26&gp=0.jpg"},@{@"title":@"我是标题我是标题",@"img_url":@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3657258270,1485602730&fm=26&gp=0.jpg"},@{@"title":@"我是标题我是标题",@"img_url":@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3657258270,1485602730&fm=26&gp=0.jpg"},@{@"title":@"我是标题我是标题",@"img_url":@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3657258270,1485602730&fm=26&gp=0.jpg"}];
     
 }
 
 -(void) initView {
     self.view.backgroundColor=[UIColor whiteColor];
-    [self.view addSubview:self.cycleScrollView];
+    [self.view addSubview:self.uiscrollView];
+    [self.uiscrollView addSubview:self.contentView];
+    
+    [_uiscrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(self.view);
+    }];
+    
+    [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.uiscrollView);
+        make.width.equalTo(self.view.mas_width);
+    }];
+    
+    
+    
+    
+    
+    [self.contentView addSubview:self.cycleScrollView];
     [self.cycleScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(self.view);
-        make.top.equalTo(self.view.mas_top).offset(65);
+        make.left.right.equalTo(self.contentView);
+        make.top.equalTo(self.contentView.mas_top).offset(65);
         make.height.mas_equalTo(200.0f);
     }];
     [self.cycleScrollView reloadData];
     
 }
 
+
+
+
+-(UIScrollView *) uiscrollView{
+    if (_uiscrollView==nil) {
+    
+        _uiscrollView=[[UIScrollView alloc] init];
+        _uiscrollView.alwaysBounceHorizontal=NO;
+    }
+    
+    return _uiscrollView;
+}
+-(UIView *) contentView{
+    
+    if (_contentView==nil) {
+        _contentView=[[UIView alloc] init];
+    }
+    return _contentView;
+    
+}
 
 
 -(GKCycleScrollView * )cycleScrollView{
@@ -89,10 +126,7 @@
         cell.layer.cornerRadius=10.0f;
         cell.layer.masksToBounds=YES;
         cell.imageView.contentMode=UIViewContentModeScaleAspectFit;
-        
-        
     }
-    
     NSDictionary * dict =self.dataArr[index];
     [cell.label setText:dict[@"title"]];
     return cell;
