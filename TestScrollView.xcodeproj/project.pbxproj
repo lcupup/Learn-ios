@@ -10,8 +10,13 @@
 		1683DD7D134CEA7B78428743 /* libPods-TestScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AC23B925C08495CF02A361 /* libPods-TestScrollView.a */; };
 		E526736C23A8B094007D523E /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E526736B23A8B094007D523E /* NetViewController.m */; };
 		E526736F23A8B451007D523E /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E526736E23A8B451007D523E /* NetWorkManager.m */; };
+		E54C425D23BB31660056E0CC /* TryFDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C425C23BB31660056E0CC /* TryFDViewController.m */; };
+		E54C426023BB323A0056E0CC /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C425F23BB323A0056E0CC /* DataSource.m */; };
+		E54C426C23BB36750056E0CC /* tgs.plist in Resources */ = {isa = PBXBuildFile; fileRef = E54C426B23BB36750056E0CC /* tgs.plist */; };
+		E54C426F23BB442C0056E0CC /* ContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E54C426E23BB442C0056E0CC /* ContentTableViewCell.m */; };
 		E54F4AF923B2FB32003FA5C5 /* TabviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54F4AF823B2FB32003FA5C5 /* TabviewViewController.m */; };
 		E54F4AFC23B312FE003FA5C5 /* LCLearnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E54F4AFB23B312FE003FA5C5 /* LCLearnTableViewCell.m */; };
+		E57626CF23BD8D9C00F90B02 /* ContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E57626CE23BD8D9C00F90B02 /* ContentTableView.m */; };
 		E57A4C802397515B0085300F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C7F2397515B0085300F /* AppDelegate.m */; };
 		E57A4C862397515B0085300F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C852397515B0085300F /* ViewController.m */; };
 		E57A4C892397515B0085300F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57A4C872397515B0085300F /* Main.storyboard */; };
@@ -21,6 +26,7 @@
 		E57A4C9E23975E040085300F /* GKCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C9A23975E040085300F /* GKCycleScrollView.m */; };
 		E57A4C9F23975E040085300F /* GKCycleScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C9B23975E040085300F /* GKCycleScrollViewCell.m */; };
 		E57A4CA023975E040085300F /* GKPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C9D23975E040085300F /* GKPageControl.m */; };
+		E58901B023B77B30004E7811 /* LCTableViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = E58901AF23B77B30004E7811 /* LCTableViewOne.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +37,19 @@
 		E526736B23A8B094007D523E /* NetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NetViewController.m; path = TestScrollView/NetViewController.m; sourceTree = SOURCE_ROOT; };
 		E526736D23A8B451007D523E /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		E526736E23A8B451007D523E /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		E54C425B23BB31660056E0CC /* TryFDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TryFDViewController.h; sourceTree = "<group>"; };
+		E54C425C23BB31660056E0CC /* TryFDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TryFDViewController.m; sourceTree = "<group>"; };
+		E54C425E23BB323A0056E0CC /* DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		E54C425F23BB323A0056E0CC /* DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		E54C426B23BB36750056E0CC /* tgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
+		E54C426D23BB442C0056E0CC /* ContentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentTableViewCell.h; sourceTree = "<group>"; };
+		E54C426E23BB442C0056E0CC /* ContentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentTableViewCell.m; sourceTree = "<group>"; };
 		E54F4AF723B2FB32003FA5C5 /* TabviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabviewViewController.h; sourceTree = "<group>"; };
 		E54F4AF823B2FB32003FA5C5 /* TabviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabviewViewController.m; sourceTree = "<group>"; };
 		E54F4AFA23B312FE003FA5C5 /* LCLearnTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLearnTableViewCell.h; sourceTree = "<group>"; };
 		E54F4AFB23B312FE003FA5C5 /* LCLearnTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLearnTableViewCell.m; sourceTree = "<group>"; };
+		E57626CD23BD8D9C00F90B02 /* ContentTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentTableView.h; sourceTree = "<group>"; };
+		E57626CE23BD8D9C00F90B02 /* ContentTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentTableView.m; sourceTree = "<group>"; };
 		E57A4C7B2397515B0085300F /* TestScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57A4C7E2397515B0085300F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E57A4C7F2397515B0085300F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +66,8 @@
 		E57A4C9B23975E040085300F /* GKCycleScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCycleScrollViewCell.m; sourceTree = "<group>"; };
 		E57A4C9C23975E040085300F /* GKPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKPageControl.h; sourceTree = "<group>"; };
 		E57A4C9D23975E040085300F /* GKPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPageControl.m; sourceTree = "<group>"; };
+		E58901AE23B77B30004E7811 /* LCTableViewOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTableViewOne.h; sourceTree = "<group>"; };
+		E58901AF23B77B30004E7811 /* LCTableViewOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTableViewOne.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +110,36 @@
 			path = NetModel;
 			sourceTree = "<group>";
 		};
+		E54C425723BB1B590056E0CC /* TryFDTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E54C425B23BB31660056E0CC /* TryFDViewController.h */,
+				E54C425C23BB31660056E0CC /* TryFDViewController.m */,
+				E54C425E23BB323A0056E0CC /* DataSource.h */,
+				E54C425F23BB323A0056E0CC /* DataSource.m */,
+				E54C426D23BB442C0056E0CC /* ContentTableViewCell.h */,
+				E54C426E23BB442C0056E0CC /* ContentTableViewCell.m */,
+				E57626CD23BD8D9C00F90B02 /* ContentTableView.h */,
+				E57626CE23BD8D9C00F90B02 /* ContentTableView.m */,
+			);
+			path = TryFDTemplate;
+			sourceTree = "<group>";
+		};
+		E54C426A23BB36640056E0CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E54C426B23BB36750056E0CC /* tgs.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E54F4AF623B2FAF9003FA5C5 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
 				E54F4AF723B2FB32003FA5C5 /* TabviewViewController.h */,
 				E54F4AF823B2FB32003FA5C5 /* TabviewViewController.m */,
+				E58901AE23B77B30004E7811 /* LCTableViewOne.h */,
+				E58901AF23B77B30004E7811 /* LCTableViewOne.m */,
 				E54F4AFA23B312FE003FA5C5 /* LCLearnTableViewCell.h */,
 				E54F4AFB23B312FE003FA5C5 /* LCLearnTableViewCell.m */,
 			);
@@ -107,6 +149,7 @@
 		E57A4C722397515A0085300F = {
 			isa = PBXGroup;
 			children = (
+				E54C426A23BB36640056E0CC /* Supporting Files */,
 				E57A4C7D2397515B0085300F /* TestScrollView */,
 				E57A4C7C2397515B0085300F /* Products */,
 				87E1386F1692498E80A70B46 /* Pods */,
@@ -125,6 +168,7 @@
 		E57A4C7D2397515B0085300F /* TestScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				E54C425723BB1B590056E0CC /* TryFDTemplate */,
 				E54F4AF623B2FAF9003FA5C5 /* TabView */,
 				E526736923A8B05F007D523E /* NetModel */,
 				E57A4C9723975D8D0085300F /* View */,
@@ -213,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57A4C8E2397515C0085300F /* LaunchScreen.storyboard in Resources */,
+				E54C426C23BB36750056E0CC /* tgs.plist in Resources */,
 				E57A4C8B2397515C0085300F /* Assets.xcassets in Resources */,
 				E57A4C892397515B0085300F /* Main.storyboard in Resources */,
 			);
@@ -251,12 +296,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E526736F23A8B451007D523E /* NetWorkManager.m in Sources */,
+				E54C426F23BB442C0056E0CC /* ContentTableViewCell.m in Sources */,
+				E57626CF23BD8D9C00F90B02 /* ContentTableView.m in Sources */,
 				E526736C23A8B094007D523E /* NetViewController.m in Sources */,
 				E57A4C9F23975E040085300F /* GKCycleScrollViewCell.m in Sources */,
+				E54C426023BB323A0056E0CC /* DataSource.m in Sources */,
 				E57A4C862397515B0085300F /* ViewController.m in Sources */,
 				E57A4CA023975E040085300F /* GKPageControl.m in Sources */,
 				E57A4C802397515B0085300F /* AppDelegate.m in Sources */,
+				E58901B023B77B30004E7811 /* LCTableViewOne.m in Sources */,
 				E57A4C9E23975E040085300F /* GKCycleScrollView.m in Sources */,
+				E54C425D23BB31660056E0CC /* TryFDViewController.m in Sources */,
 				E54F4AFC23B312FE003FA5C5 /* LCLearnTableViewCell.m in Sources */,
 				E57A4C912397515C0085300F /* main.m in Sources */,
 				E54F4AF923B2FB32003FA5C5 /* TabviewViewController.m in Sources */,

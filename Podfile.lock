@@ -15,25 +15,29 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
   - XMNetworking (1.1.0):
     - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Masonry
+  - "UITableView+FDTemplateLayoutCell"
   - XMNetworking (~> 1.1.0)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
+    - "UITableView+FDTemplateLayoutCell"
     - XMNetworking
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   XMNetworking: 7160cc06f504f325eec515a1e687ee1aa89bc462
 
-PODFILE CHECKSUM: b864f6f66a92d79ad154803edd74742702d00e33
+PODFILE CHECKSUM: b032b2dabe0164b66fbd8d9d00e421fc63657902
 
 COCOAPODS: 1.8.4

@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "NetViewController.h"
 #import "TabviewViewController.h"
+#import "TryFDViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,7 @@
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
     
-    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:[[ViewController alloc]init]];
+    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:[[TryFDViewController alloc]init]];
     self.window.rootViewController=nav;
     
     

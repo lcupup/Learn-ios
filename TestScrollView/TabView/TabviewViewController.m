@@ -8,12 +8,14 @@
 
 #import "TabviewViewController.h"
 #import "LCLearnTableViewCell.h"
+#import "LCTableViewOne.h"
 
 #define  key_name @"name"
 @interface TabviewViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong) UITableView * tableView;
 @property(nonatomic,strong) NSArray * data;
+@property (nonatomic, strong) LCTableViewOne *tableViewOne;
 @end
 
 @implementation TabviewViewController
@@ -38,6 +40,8 @@
     
 }
 
+
+
 -(UITableView *) tableView{
     if (_tableView==nil) {
         _tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,200)];
@@ -52,9 +56,32 @@
     
 }
 
+- (LCTableViewOne *)tableViewOne {
+    if (_tableViewOne == nil) {
+        _tableViewOne=[[LCTableViewOne alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+               _tableViewOne.delegate=self;
+               _tableViewOne.dataSource=self;
+               _tableViewOne.rowHeight=UITableViewAutomaticDimension;
+               _tableViewOne.estimatedRowHeight=88.0;
+        _tableViewOne.dateDic = nil;
+//               [_tableViewOne setTableFooterView:[[UIView alloc]initWithFrame:CGRectZero]];
+    }
+    return _tableViewOne;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return self.data.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row ==0) {
+        
+        
+        
+        return _tableViewOne.contentSize.height;
+    }
+    return 40;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -66,8 +93,17 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setName:[self.data[indexPath.row] objectForKey:key_name]];
     
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
+
+    
+//    if (indexPath.section == 0) {
+        
+        if (indexPath.row ==0) {
+            [cell.contentView addSubview:_tableViewOne];
+            _tableViewOne.frame = CGRectMake(0, 0, self.view.frame.size.width,_tableViewOne.contentSize.height);
+            [tableView reloadData];
+            
+        }
+//    }
     return cell;
     
 }
