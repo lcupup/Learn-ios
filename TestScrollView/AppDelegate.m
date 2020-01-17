@@ -12,6 +12,7 @@
 #import "TabviewViewController.h"
 #import "TryFDViewController.h"
 #import "LearnMainViewController.h"
+#import "SessionTableviewViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,7 @@
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
     
-    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:[[LearnMainViewController alloc]init]];
+    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:[[SessionTableviewViewController alloc]init]];
     self.window.rootViewController=nav;
     
     

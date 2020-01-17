@@ -27,6 +27,7 @@
 		E57A4C9F23975E040085300F /* GKCycleScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C9B23975E040085300F /* GKCycleScrollViewCell.m */; };
 		E57A4CA023975E040085300F /* GKPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E57A4C9D23975E040085300F /* GKPageControl.m */; };
 		E58901B023B77B30004E7811 /* LCTableViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = E58901AF23B77B30004E7811 /* LCTableViewOne.m */; };
+		E58DF19823C87F7D00B3799D /* SessionTableviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58DF19723C87F7D00B3799D /* SessionTableviewViewController.m */; };
 		E593C36D23C060580039862F /* LearnMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E593C36C23C060580039862F /* LearnMainViewController.m */; };
 		E593C37023C070EC0039862F /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E593C36F23C070EC0039862F /* ChildViewController.m */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,8 @@
 		E57A4C9D23975E040085300F /* GKPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPageControl.m; sourceTree = "<group>"; };
 		E58901AE23B77B30004E7811 /* LCTableViewOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTableViewOne.h; sourceTree = "<group>"; };
 		E58901AF23B77B30004E7811 /* LCTableViewOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTableViewOne.m; sourceTree = "<group>"; };
+		E58DF19623C87F7D00B3799D /* SessionTableviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionTableviewViewController.h; sourceTree = "<group>"; };
+		E58DF19723C87F7D00B3799D /* SessionTableviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionTableviewViewController.m; sourceTree = "<group>"; };
 		E593C36B23C060580039862F /* LearnMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnMainViewController.h; sourceTree = "<group>"; };
 		E593C36C23C060580039862F /* LearnMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnMainViewController.m; sourceTree = "<group>"; };
 		E593C36E23C070EC0039862F /* ChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 		E57A4C722397515A0085300F = {
 			isa = PBXGroup;
 			children = (
+				E58DF19523C87F4900B3799D /* Learen-Session-Tab-View */,
 				E593C36A23C05F640039862F /* Learn-Scroll-Tab-View */,
 				E54C426A23BB36640056E0CC /* Supporting Files */,
 				E57A4C7D2397515B0085300F /* TestScrollView */,
@@ -203,6 +207,15 @@
 				E57A4C9D23975E040085300F /* GKPageControl.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E58DF19523C87F4900B3799D /* Learen-Session-Tab-View */ = {
+			isa = PBXGroup;
+			children = (
+				E58DF19623C87F7D00B3799D /* SessionTableviewViewController.h */,
+				E58DF19723C87F7D00B3799D /* SessionTableviewViewController.m */,
+			);
+			path = "Learen-Session-Tab-View";
 			sourceTree = "<group>";
 		};
 		E593C36A23C05F640039862F /* Learn-Scroll-Tab-View */ = {
@@ -319,6 +332,7 @@
 				E526736C23A8B094007D523E /* NetViewController.m in Sources */,
 				E57A4C9F23975E040085300F /* GKCycleScrollViewCell.m in Sources */,
 				E54C426023BB323A0056E0CC /* DataSource.m in Sources */,
+				E58DF19823C87F7D00B3799D /* SessionTableviewViewController.m in Sources */,
 				E593C37023C070EC0039862F /* ChildViewController.m in Sources */,
 				E57A4C862397515B0085300F /* ViewController.m in Sources */,
 				E57A4CA023975E040085300F /* GKPageControl.m in Sources */,
